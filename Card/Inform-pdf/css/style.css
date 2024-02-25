@@ -1,0 +1,182 @@
+@font-face {
+  
+    font-family: 'Asset';
+    src: url('fonts/Asset-Regular.ttf') format('truetype');
+  
+  }
+  
+  @font-face {
+    
+    font-family: 'Shentox';
+    src: url('/fonts/ofont.ru_Hero.ttf') format('truetype');
+  
+  }
+  
+  @font-face {
+    font-family: 'Steamy';
+    src: url('/font/19453.otf');
+  }
+  
+  
+  @font-face {
+    font-family: 'Bolero';
+    src: url('fonts/Bolero.ttf');
+  }
+  
+  a {
+    text-decoration: none; /* Убрать подчеркивание */
+    color: #000; /* Изменить цвет ссылок на черный */
+  }
+  
+  html {
+    background-color: #D0CCB3;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  header {
+    display: flex;
+
+  /*  margin-top: 15px;*/
+    /*margin-left: 20px;*/
+    justify-content: center;
+    align-items: center;
+    background-color: #A79474;
+  }
+  .filter-icon{
+    filter: invert(27%) sepia(8%) saturate(3551%) hue-rotate(19deg) brightness(95%) contrast(85%);
+  }
+  .green-txt-color{
+    color: #535019;
+  }
+  
+  .nav-list {
+    z-index: 1;
+    display: flex;
+    font-family: 'Shentox';
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 90px;
+    
+  }
+  
+  .nav-list a {
+    color:#FFFFFF;
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  ul.call {
+    margin-top: 0px;
+  }
+  
+  ul.call li {
+    position: relative;
+    display: flex; /* Устанавливаем элементы списка в ряд */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    height: 30px;
+    font-family: 'Shentox';
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    z-index: 1;
+  }
+  
+  ul.call li img {
+    margin-right: 10px; /* Добавляем отступ между изображением и текстом */
+  }
+  
+ 
+  .img-card{
+    width: 100%;
+    height: 450px;
+    background-position: right 30% bottom 50%;
+    background-size: cover;
+  }
+  .link-card{
+    font-family: Shentox; 
+    font-size: 20px;
+    display: flex;
+     flex-direction: row;
+      justify-content: end;
+      flex-wrap: nowrap;
+  }
+  .dropdown-content {
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+    background-color: #D0CCB3;
+    min-width: 170px;
+    border-radius: 0.3125em;
+    box-shadow: 0px 0.5em 1em 0px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 10;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+  }
+  .p-pdf{
+    font-size: 25px;
+    font-family: Shentox;
+    color: #535019;
+    text-align:justify;
+    width: 940px;
+  }
+ .img-pdf{
+  width: 30%;
+  mix-blend-mode: multiply;
+ }
+ .card-heading{
+  font-family: steamy;
+  font-size: 50px;
+  display: flex;
+  justify-content: center
+ }
+ span{
+  font-family: steamy;
+  font-size: 40px;
+
+ }
+ td{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  
+ }
+ tr{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }

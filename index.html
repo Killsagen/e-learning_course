@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js"></script>
+    <!--Подключение JQ и слайдера -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+    <title>Обучающий ресурс</title>
+  </head>
+  <body style="background-image: url(./img/back_index.jpg); background-size:contain;">
+    <header>
+      <div>
+      <img src="Card/img/logo.svg" alt="" style="width: 70px;">
+      </div>
+      <ul class="nav-list">
+      <li><a href="index.html">Главная</a></li>
+      <div class="dropdown">
+      <li><a href="teor.html">Теоретический материал</a></li>
+      <div class="dropdown-content">
+          <a href="./Teor-html/teor1.html">Общие сведения...</a>
+          <a href="./Teor-html/teor2.html">Инструменты, присп... </a>
+          <a href="./Teor-html/teor3.html">Подготовка плит...</a>
+          <a href="./Teor-html/teor4.html">Приготовление рас...</a>
+          <a href="./Teor-html/teor5.html">Подготовка вер...</a>
+          <a href="./Teor-html/teor6.html">Отделка и уход...</a>
+          <a href="./Teor-html/teor7.html">Технология рем...</a>
+          <a href="./Teor-html/teor8.html">Выполнение обли...</a>
+          <a href="./Teor-html/teor9.html">Охрана труда...</a>
+      </div>
+      </div>
+      <div class="dropdown">
+      <li><a href="./texno.html">Технологические карты</a></li>
+      <div class="dropdown-content">
+          <a href="./Card/Chapter-1.html">Глава 1</a>
+          <a href="./Card/Chapter-2.html">Глава 2</a>
+          <a href="./Card/Chapter-3.html">Глава 3</a>
+          <a href="./Card/Chapter-4.html">Глава 4</a>
+          <a href="./Card/Chapter-5.html">Глава 5</a>
+          <a href="./Card/Chapter-6.html">Глава 6</a>
+      </div>
+      </div>
+      <li><a href="./slovar.html">Словарь</a></li>
+      <li><a href="./contr.html" class="last-chield">Контроль знаний</a></li>
+      </ul>
+      <ul>
+        <a href="register.html"><img src="./img/VectorIcon/user-add.svg" style="width: 40px;"  class="filter-icon"></a> 
+      </ul>
+      <ul>
+        <img src="./img/VectorIcon/user.svg" style="width: 40px;"  class="filter-icon" onclick="openModal('LogIN')">
+      </ul>
+      
+  </header>
+    <main>
+      <div>
+        <div class="text-1"><p>Технология облицовки<br>поверхностей</p></div>
+        <div class="text-2"><p>Электронный обучающий курс</p></div>
+        <div class="tile"> <img src="img/Tile.png" alt=""></div>
+      </div>
+      <div class="nav">
+        <div class="teor-vraper" style="padding-top: 50px;"> <!--Использованы стили из Теоритических материалов-->
+          <div class="teor-flex-content-rectangle"> <!--Тут тоже использованы стили из теор.мат.-->
+            <a href="teor.html"><img src="img/VectorIcon/Теоритический материал 1.svg" alt="" class="index-icon-href"></a>
+            <a href="teor.html"><p class="teor-p" style="text-align: center;">Теоретический<br>материал</p></a>
+          </div>
+          <div class="teor-flex-content-rectangle">
+            <a href="texno.html"><img src="img/VectorIcon/ТехнологическиеКарты.svg" alt="" class="index-icon-href"></a>
+            <a href="texno.html"><p class="teor-p" style="text-align: center;">Технологические<br>карты</p></a>
+          </div>
+          <div class="teor-flex-content-rectangle">
+            <a href="slovar.html"><img src="img/VectorIcon/Словарь.svg  " alt="" class="index-icon-href"></a>
+            <a href="slovar.html"><p class="teor-p" style="text-align: center;">Словарь</p></a>
+          </div>
+          <div class="teor-flex-content-rectangle">
+            <a href="contr.html"><img src="img/VectorIcon/Контроль знаний.svg" alt="" class="index-icon-href"></a>
+            <a href="contr.html"><p class="teor-p" style="text-align: center;">Контроль<br>знаний</p></a>
+          </div>
+        </div>
+        <div class="text-1" style="margin-bottom: 50px;"><p style="color:#535019B2;text-align: center;">О курсе</p></div>
+        <!--Слайдер с фотками-->
+        <div class="index-flex-inf">
+        <div class="content">
+          <div class="slider single-item">
+            <div>
+            <img src="./img/Index-slider/1.jpg" class="index-img-slider">
+            </div>
+            <div>
+              <img src="./img/Index-slider/2.jpg" class="index-img-slider">
+            </div>
+            <div>
+              <img src="./img/Index-slider/3.jpg" class="index-img-slider">
+            </div>
+            <div>
+              <img src="./img/Index-slider/4.jpg" class="index-img-slider">
+            </div>
+            <div>
+              <img src="./img/Index-slider/9.jpg" class="index-img-slider">
+            </div>
+            <div>
+              <img src="./img/Index-slider/8.jpg" class="index-img-slider">
+            </div>
+          </div>
+        </div>
+        <!--Скрипт для слайдера-->
+        <script>
+            $(".single-item").slick({
+              dots: true,
+              infinite: true,
+              speed: 500,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            });
+        </script>
+          <p class="ordinary-p-text">
+            Электронный учебный курс предназначен для изучения технологии облицовочных работ при подготовке квалифицированных 
+            рабочих по квалификации "Облицовщик-плиточник".<br>
+            Современное строительство при проведении облицовочных работ применяет индустриальные методы, 
+            но достаточно большое число работ выполняют с помощью ручного труда, что влияет на конечную стоимость.<br>
+            Качество выполнения работ зависит не только от применяемых материалов и изделий, но и от знаний и умений 
+            специалиста-отделочника, его квалификации. Специалист должен знать технологическую последовательность выполнения работ, 
+            необходимость применения определённых клеёв и мастик для крепления различных материалов, нужную толщину клеящей прослойки, 
+            соблюдать необходимые технологические перерывы для высокого качества работ. 
+          </p>
+        </div>
+
+
+        <div  class="text-1"><p style="text-align: center; color: #535019B2; margin-bottom: 40px;">Интересные факты</p></div>
+            <div class="index-facts-flex">
+          <div class="index-facts" style="background-image: url(./img/Index-facts/1.jpg);" onclick="openModal('fact1')"></div>
+          <div class="index-facts" style="background-image: url(./img/Index-facts/2.jpg);" onclick="openModal('fact2')"></div>
+          <div class="index-facts" style="background-image: url(./img/Index-facts/3.jpg);" onclick="openModal('fact3')"></div>
+          <div class="index-facts" style="background-image: url(./img/Index-facts/4.jpg);" onclick="openModal('fact4')"></div>
+          <div class="index-facts" style="background-image: url(./img/Index-facts/5.jpg);" onclick="openModal('fact5')"></div>
+            </div>
+      </div>
+    </main>
+     <!-- Первое модальное окно -->
+  <div id="LogIN" class="modal" style="height: 35%;">
+    <img src="./img/фон.jpg" class="modal-img">
+    <p style="font-family: steamy; font-size: 25px; position: absolute; top: -30%; right: 5%;">Вход</p>  
+    <div class="modal-txt modal-font" style="display: flex; flex-direction: column; align-items: end;">
+      <img src="./img/VectorIcon/close.svg" class="close-modal" onclick="closeModal('LogIN')">
+      <form action="./PHP/Validation-forms/LogIN.php" method="post">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+  </div>
+  <!-- Полупрозрачный фон -->
+  <div class="overlay" onclick="closeAllModals()"></div>
+  <!--ФАКТЫ-->
+  <!--Модальное окно 1-->
+  <div id="fact1" class="modal">
+    <img src="./img/Index-facts/1.jpg" class="modal-img">
+    <div class="modal-txt modal-font">
+      <p style="font-family: steamy; font-size: 25px;">Лазерная обработка</p>  
+      <img src="./img/VectorIcon/close.svg" class="close-modal" onclick="closeModal('fact1')">
+      <p>Лазеры используются для точной обработки поверхностей, создания текстур, 
+        нанесения рисунков или маркировки материалов. Эта технология обеспечивает высокую точность и повышенную 
+        эффективность процесса облицовки.
+      </p>
+    </div>
+  </div>
+  <!--Модальное окно 2-->
+  <div id="fact2" class="modal">
+    <img src="./img/Index-facts/2.jpg" class="modal-img">
+    <div class="modal-txt modal-font">
+      <p style="font-family: steamy; font-size: 25px;">Плазменное напыление</p>  
+      <img src="./img/VectorIcon/close.svg" class="close-modal" onclick="closeModal('fact2')">
+      <p>Плазменное напыление — это метод облицовки, при котором материал в виде порошка распыляется в плазменном пламени и 
+        наносится на поверхность. Этот процесс позволяет создавать тонкие и стойкие покрытия на различных материалах.
+      </p>
+    </div>
+  </div>
+  <!--Модальное окно 3-->
+  <div id="fact3" class="modal">
+    <img src="./img/Index-facts/3.jpg" class="modal-img">
+    <div class="modal-txt modal-font">
+      <p style="font-family: steamy; font-size: 25px;">Подводная облицовка</p>  
+      <img src="./img/VectorIcon/close.svg" class="close-modal" onclick="closeModal('fact3')">
+      <p>Технология подводной облицовки используется для защиты подводных конструкций, таких как нефтяные платформы или морские 
+        трубопроводы, от коррозии. Этот процесс позволяет наносить защитные покрытия под водой, обеспечивая долговечность и 
+        надежность сооружений.
+      </p>
+    </div>
+  </div>
+  <!--Модальное окно 4-->
+  <div id="fact4" class="modal">
+    <img src="./img/Index-facts/4.jpg" class="modal-img">
+    <div class="modal-txt modal-font">
+      <p style="font-family: steamy; font-size: 25px;">Измельчение материалов</p>  
+      <img src="./img/VectorIcon/close.svg" class="close-modal" onclick="closeModal('fact4')">
+      <p> Современные технологии облицовки поверхностей включают использование специализированных методов измельчения материалов 
+        для создания уникальных текстур и отделочных эффектов. Например, мельчайшие частицы керамики или стекла могут быть 
+        интегрированы в покрытия, придавая им особую текстуру или светоотражающие свойства. Этот процесс позволяет достичь 
+        высокой декоративности и функциональности поверхностей.
+      </p>
+    </div>
+  </div>
+  <!--Модальное окно 5-->
+  <div id="fact5" class="modal">
+    <img src="./img/Index-facts/5.jpg" class="modal-img">
+    <div class="modal-txt modal-font">
+      <p style="font-family: steamy; font-size: 25px;">Термообработка</p>  
+      <img src="./img/VectorIcon/close.svg" class="close-modal" onclick="closeModal('fact5')">
+      <p>Термообработка поверхностей применяется для изменения структуры материала и улучшения его механических свойств. Этот процесс 
+        может включать нагревание, охлаждение или нанесение тепловых покрытий, что делает материал более прочным, твердым или стойким 
+        к износу.
+      </p>
+    </div>
+  </div>
+  </body>
+</html>

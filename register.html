@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html  style="background-image: url(./img/фон.jpg); background-repeat: no-repeat; background-size:cover;">
+  <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>Обучающий ресурс</title>
+        <style>
+          form {
+  background-color: #A79474;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: auto;
+  opacity: 90%;
+}
+        </style>
+      </head>
+      <body>
+        <header>
+          <div class="logo">
+          <img src="Card/img/logo.svg" alt="" style="width: 70px;">
+          </div>
+          <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <div class="dropdown">
+          <li><a href="teor.html">Теоретический материал</a></li>
+          <div class="dropdown-content">
+              <a href="./Teor-html/teor1.html">Общие сведения...</a>
+              <a href="./Teor-html/teor2.html">Инструменты, присп... </a>
+              <a href="./Teor-html/teor3.html">Подготовка плит...</a>
+              <a href="./Teor-html/teor4.html">Приготовление рас...</a>
+              <a href="./Teor-html/teor5.html">Подготовка вер...</a>
+              <a href="./Teor-html/teor6.html">Отделка и уход...</a>
+              <a href="./Teor-html/teor7.html">Технология рем...</a>
+              <a href="./Teor-html/teor8.html">Выполнение обли...</a>
+              <a href="./Teor-html/teor9.html">Охрана труда...</a>
+          </div>
+          </div>
+          <div class="dropdown">
+          <li><a href="./texno.html">Технологические карты</a></li>
+          <div class="dropdown-content">
+              <a href="./Card/Chapter-1.html">Глава 1</a>
+              <a href="./Card/Chapter-2.html">Глава 2</a>
+              <a href="./Card/Chapter-3.html">Глава 3</a>
+              <a href="./Card/Chapter-4.html">Глава 4</a>
+              <a href="./Card/Chapter-5.html">Глава 5</a>
+              <a href="./Card/Chapter-6.html">Глава 6</a>
+          </div>
+          </div>
+          <li><a href="./slovar.html">Словарь</a></li>
+          <li><a href="./contr.html" class="last-chield">Контроль знаний</a></li>
+          </ul>
+          <ul>
+            <a href="register.html"><img src="./img/VectorIcon/user-add.svg" style="width: 40px;"  class="filter-icon"></a> 
+          </ul>
+          <ul>
+            <img src="./img/VectorIcon/user.svg" style="width: 40px;"  class="filter-icon" onclick="openModal('LogIN')">
+          </ul>
+          
+      </header>
+      <div style="display: flex; justify-content: center; margin-top: 10px;">
+    <form action="./PHP/Validation-forms/check.php" method="post">
+      <div style="font-size: 25px; font-family: Steamy; display: flex; justify-content: center;color: #ffffff;">
+        <p>Регистрация</p>
+      </div>
+      <div style="display: flex; flex-wrap: nowrap;">
+        <div style="display: flex; flex-direction: column;">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+        </div>
+        <div  style="display: flex; flex-direction: column; margin-left: 20px;">
+      <label for="surname">Фамилия:</label>
+      <input type="text" id="surname" name="surname" required>
+        </div>
+      </div>
+      <label for="patronymic">Отчество:</label>
+      <input type="text" id="patronymic" name="patronymic">
+    <div style="display: flex; flex-wrap: nowrap;">
+      <div style="display: flex; flex-direction: column;">
+        <label for="age">Возраст:</label>
+      <input type="number" id="age" name="age" required>
+      </div>
+      <div style="display: flex; flex-direction: column; margin-left: 20px;">
+      <label for="gender">Пол:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Мужской</option>
+        <option value="female">Женский</option>
+      </select>
+      </div>
+    </div>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="regcode">Код (не обязательно):</label>
+      <input type="regcode" id="regcode" name="regcode" style="margin-bottom: 20px;">
+      <button type="submit" name="register">Зарегистрироваться</button>
+    </form>
+  </div>
+  
+    </body>
+</html>
